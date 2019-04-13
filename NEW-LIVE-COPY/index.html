@@ -5,26 +5,35 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="UnJDeadNetworkSite">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<!-- Favicon -->   
 	<link href="img/favicon.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i" rel="stylesheet">
-
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/font-awesome.min.css"/>
 	<link rel="stylesheet" href="css/owl.carousel.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<link rel="stylesheet" href="css/animate.css"/>
-
-
+	<script>
+	function setClipboard(value) {
+    var tempInput = document.createElement("input");
+    tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+    tempInput.value = value;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+	}
+	</script>
 	<!--[if lt IE 9]>
 	  <script src="https://static-cdn.unjdead.network/html5shiv.min.js"></script>
 	  <script src="https://static-cdn.unjdead.network/respond.min.js"></script>
 	<![endif]-->
-
 </head>
+
 <body>
 	<!-- Page Preloder -->
 	<div id="preloder">
@@ -38,43 +47,49 @@
 			<a class="site-logo" href="index.html">
 				<img src="img/logo.png" alt="The UnJdead Network Logo Text">
 			</a>
+
 			<div class="user-panel">
 				<a href="https://www.unjdead.network/login.html">Login Into Forums</a>
 			</div>
+
 			<!-- responsive -->
 			<div class="nav-switch">
 				<i class="fa fa-bars"></i>
 			</div>
+
 			<!-- site menu -->
 			<nav class="main-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
 					<li><a href="https://theteamatthe.unjdead.network/">Our Team</a></li>
 					<li><a href="https://register.unjdead.network/">Register Offline</a></li>
-					<li><a href="https://discord.unjdead.link/">Discord Link</a></li>
+					<li><a href="https://rules.unjdead.vip/">Our Rules</a></li>
+					<!--<li><a href="https://discord.unjdead.link/">Discord Link</a></li>-->
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<!-- Header section end -->
 
+	<!-- Header section end -->
 
 	<!-- Hero section -->
 	<section class="hero-section">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item set-bg" data-setbg="img/slider-1.jpg">
 				<div class="hs-text">
-					<div class="container"><center>
+					<div style="text-align: center;" class="container">
 						<h2>UnJDeadNetwork<br>A perfect server for everyone to play on!<br>IP: <span>PlayOnThe.UnJDead.Network</span>!</h2>
-						<p></p></center>
-						<!--<a href="#" class="site-btn">Read More</a>-->
+						<br>
+						<button onclick="setClipboard('playonthe.unjdead.network')" class="site-btn">Copy IP</button>
+						<br><br>
+						<h3><div style="color: white;">The server is whitelisted as we are<br>currently building the server.</div></h3>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Hero section end -->
 
+	<!-- Hero section end -->
 
 	<!-- Latest news section -->
 	<div class="latest-news-section">
@@ -82,7 +97,7 @@
 		<div class="news-ticker">
 			<div class="news-ticker-contant">
 				<div class="nt-item"><span class="new">new</span>A new team website! </div>
-				<div class="nt-item"><span class="strategy">fixed</span>The Discord Link! </div>
+				<!--<div class="nt-item"><span class="strategy">fixed</span>The Discord Link! </div>-->
 				<div class="nt-item"><span class="new">new</span>Registering offline (Not on our server)</div>
 			</div>
 		</div>
@@ -200,7 +215,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="footer-widget mb-5 mb-md-0">
-						<center><h4 class="fw-title">Contact</h4></center>
+						<h4 style="text-align:center;" class="fw-title">Contact</h4>
 						<div class="latest-blog">
 							<div class="lb-item">
 								<div class="lb-thumb set-bg" data-setbg="img/email.png"></div>
@@ -226,14 +241,14 @@
 							<div class="tc-item"><a href="https://www.unjdead.store/category/1108281">
 								<div class="tc-thumb set-bg" data-setbg="img/store/100dollars.png"></div>
 								<div class="tc-content">
-									<p><font color="#ff205f">100 UnDead Dollars</font></p>
+									<p style="color:#ff205f;">100 UnDead Dollars</p>
 									<div class="tc-date">$40.00 USD</div></a>
 								</div>
 							</div>
 							<div class="tc-item"><a href="https://www.unjdead.store/category/1108281">
 								<div class="tc-thumb set-bg" data-setbg="img/store/1000dollars.png"></div>
 								<div class="tc-content">
-									<p><font color="#ff205f">1000 UnDead Dollars</font></p>
+									<p style="color:#ff205f;">1000 UnDead Dollars</p>
 									<div class="tc-date">$220.00 USD</div></a>
 								</div>
 						</div>
@@ -252,10 +267,11 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="https://theteamatthe.unjdead.network/">Our Team</a></li>
 				<li><a href="https://register.unjdead.network/">Register Offline</a></li>
-				<li><a href="https://discord.unjdead.link/">Discord Link</a></li>
+				<li><a href="https://rules.unjdead.vip/">Our Rules</a></li>
+				<!--<li><a href="https://discord.unjdead.link/">Discord Link</a></li>-->
 			</ul>
 			<p class="copyright">
-				&copy; Copyright 2019. All Rights Reserved. UnJDeadNetwork</small>
+				&copy; Copyright 2019. All Rights Reserved. UnJDeadNetwork | Registered Under ABN: 44 390 916 191</small>
 </p>
 		</div>
 	</footer>
